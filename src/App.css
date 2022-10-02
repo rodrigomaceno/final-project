@@ -1,0 +1,59 @@
+#myForm {
+    margin-bottom: 20px;
+}
+
+.edit-button {
+    font-size: 12px;
+}
+
+.myButton {
+    margin-left: 1em;
+    font-size: 12px;
+}
+
+.myTable {
+
+    height: 600px;
+
+    overflow: scroll;
+}
+
+#mainImg {
+    max-height: auto;
+    width: 100%;
+    max-width: 1500px;
+
+    /* The code below centers the image */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.welcome {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 80px;
+    text-shadow: 1px 1px 6px white;
+
+    top: auto;
+    
+    position:relative;
+    
+}
+
+Table thead {
+    position: sticky;
+    top: 0px;
+    margin: 0 0 0 0;
+}
+
+.centerV {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aliCenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
