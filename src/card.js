@@ -12,7 +12,7 @@ export default class MyCard extends React.Component {
             image: props.image,
             synopsis: props.synopsis,
         };
-    }
+    } 
     render() {
         return (
             <Card style={{ width: '18rem' }}>
