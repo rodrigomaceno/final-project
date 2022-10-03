@@ -15,7 +15,7 @@ function MyNavbar() {
 
             {/* the href is what actually changes the url name in the browser */}
             <Nav.Link href="/configure"> Edit Catalog</Nav.Link>
-            <Nav.Link href="/browse"> Browse</Nav.Link>
+            <Nav.Link href="/browse"> Browse Books</Nav.Link>
             <Nav.Link href="/about"> About Us</Nav.Link>
           
           </Nav>

@@ -13,7 +13,8 @@ class MyApp extends React.Component {
       singledata: {
         title: "",
         author: "",
-        image: ""
+        image: "",
+        synopsis: ""
       }
     };
     this.getLists = this.getLists.bind(this);
@@ -49,15 +50,19 @@ class MyApp extends React.Component {
     var title = this.state.singledata.title;
     var author = this.state.singledata.author;
     var image = this.state.singledata.image;
+    var synopsis = this.state.singledata.synopsis;
+    
     if (event.target.name === "title") title = event.target.value;
     if (event.target.name === "author") author = event.target.value;
     if (event.target.name === "image") image = event.target.value; // THis if solved the issue with image icon displaying when there image field was empty
+    if (event.target.name === "synopsis") synopsis = event.target.value;
 
     this.setState({
       singledata: {
         title: title,
         author: author,
-        image: image
+        image: image,
+        synopsis: synopsis
       }
     });
   }
@@ -80,7 +85,8 @@ class MyApp extends React.Component {
           singledata: {
             title: "",
             author: "",
-            image: ""
+            image: "",
+            synopsis: ""
           }
         });
         this.getLists();
@@ -98,7 +104,8 @@ class MyApp extends React.Component {
           title: "Loading...",
           author: "Loading...",
           // This corrects the Loading... from displaying when field is empty
-          image: "Loading..." 
+          image: "Loading...", 
+          synopsis: "Loading..."
         }
       },
       () => {
@@ -110,7 +117,8 @@ class MyApp extends React.Component {
               singledata: {
                 title: result.title,
                 author: result.author ? result.author : "",
-                image: result.image 
+                image: result.image,
+                synopsis: result.synopsis 
               }
             });
           });
@@ -136,7 +144,8 @@ class MyApp extends React.Component {
           singledata: {
             title: "",
             author: "",
-            image: ""
+            image: "",
+            synopsis: ""
           }
         });
         this.getLists();
@@ -160,7 +169,8 @@ class MyApp extends React.Component {
           singledata: {
             title: "",
             author: "",
-            image: ""
+            image: "",
+            synopsis: ""
           }
         });
         this.getLists();

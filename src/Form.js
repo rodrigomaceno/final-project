@@ -28,6 +28,13 @@ function Form(props) {
                 // defaultValue={'_'}
                 onChange={props.handleChange}
               />
+              &nbsp;&nbsp;&nbsp;
+              <input className='form-control'
+                type="text"
+                placeholder="Synopsis"
+                name="synopsis"
+                onChange={props.handleChange}
+              />
         </form>
               <button className='btn btn-success' onClick={props.createList}> Submit </button>
   </>

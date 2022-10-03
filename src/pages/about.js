@@ -3,8 +3,6 @@ import '../App.css'
 import Image from 'react-bootstrap/Image'
 
 
-let myarr = []; 
-
 function About() {
   
 

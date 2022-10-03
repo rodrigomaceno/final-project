@@ -10,7 +10,6 @@ function UpdateList(props) {
 
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-
       <div hidden id={dataTarget}>
         <br />
         <input type="text"
@@ -38,19 +37,26 @@ function UpdateList(props) {
           onChange={props.handleChange}>
         </input>
 
+        <br />
+
+        <input type="text"
+          placeholder="Synopsis"
+          name="synopsis"
+          value={props.singledata.synopsis}
+          onChange={props.handleChange}>
+        </input>
+
         <button id='cancel' type="button"
           className="btn btn-warning myButton"
           onClick={(e) => {
             props.getList(e, props.elementId);
             document.getElementById(dataTarget).setAttribute("hidden", '');
             //console.log(document.getElementById(dataTarget));
-
           }}>Cancel</button>
 
         <button type="button"
           className="btn btn-success myButton"
           onClick={(event) => {
-
             props.updateList(event, props.elementId);
             //console.log(event, props.elementId)
           }

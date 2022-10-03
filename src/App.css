@@ -11,6 +11,12 @@
     font-size: 12px;
 }
 
+.browse {
+    height: 950px;
+
+    overflow: scroll;
+}
+
 .myTable {
 
     height: 600px;
